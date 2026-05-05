@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App name -->
+    <string name="app_name">Hagit.AI</string>
+
+    <!-- Splash screen tagline -->
+    <string name="splash_tagline">Sharpen your voice. Strengthen your ideas.</string>
+
+    <!-- Login & Signup -->
+    <string name="login_title">Login to Hagit.AI</string>
+    <string name="signup_title">Create BISU Account</string>
+    <string name="email_hint">BISU Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="signup_button">Sign Up</string>
+    <string name="login_link">Already have an account? Login</string>
+    <string name="signup_link">Don’t have an account? Sign up</string>
+
+    <!-- Home / Navigation -->
+    <string name="home_title">Welcome to Hagit.AI</string>
+    <string name="debate_title">AI Debate</string>
+    <string name="leaderboard_title">Leaderboard</string>
+    <string name="profile_title">Your Profile</string>
+
+    <!-- Messages -->
+    <string name="login_success">Login successful!</string>
+    <string name="signup_success">Account created successfully!</string>
+    <string name="error_auth">Authentication failed. Please try again.</string>
+    <string-array name="department_list">
+        <item>BSIT</item>
+        <item>BSCS</item>
+        <item>BSCRIM</item>
+        <item>BITFPST </item>
+        <item>BSELEX</item>
+        <item>BSELEC</item>
+    </string-array>
+
+</resources>

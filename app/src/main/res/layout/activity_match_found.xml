@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient">
+
+    <!-- Glass Effect Card -->
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        android:background="@drawable/glass_bg">
+
+        <!-- Profile Icon -->
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/ic_people"
+            app:tint="#60CC8B" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Match Found!"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ready to debate?"
+            android:textColor="#BBFFFFFF"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Player Name -->
+        <TextView
+            android:id="@+id/tvOpponentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading Opponent..."
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="2dp" />
+
+
+
+        <!-- Debate Topic Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Debate Topic :"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Topic Content -->
+        <TextView
+            android:id="@+id/tvDebateTopic"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="Loading Topic..."
+            android:textColor="#E0E0E0"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Start Button -->
+        <Button
+            android:id="@+id/startDebateButton"
+            android:background="@drawable/start_button_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Debate"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#22C55E"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Dark teal base gradient -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="135"
+                android:startColor="#0A1F1F"
+                android:centerColor="#0F3A3A"
+                android:endColor="#061313"/>
+        </shape>
+    </item>
+
+    <!-- Teal glow (focus center) -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="500"
+                android:centerX="50%"
+                android:centerY="40%"
+                android:startColor="#4014B8A6"
+                android:endColor="#0014B8A6"/>
+        </shape>
+    </item>
+
+    <!-- VERY subtle white highlight (depth boost) -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="600"
+                android:centerX="50%"
+                android:centerY="30%"
+                android:startColor="#10FFFFFF"
+                android:endColor="#00FFFFFF"/>
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="20dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/rounded_glass_square"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_throne"
+                android:contentDescription="Trophy" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Debate Complete!"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppin"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_glass_square"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="6dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Random Topic"
+                android:textColor="#B0C4DE"
+                android:fontFamily="@font/inter"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Score Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_card"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Overall Score"
+                android:textColor="#B0C4DE"
+                android:fontFamily="@font/inter"
+                android:textSize="13sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/textScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="72"
+                android:textSize="52sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppin"
+                android:textColor="#FFD700" />
+
+            <TextView
+                android:id="@+id/textScoreLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fair"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/poppin"
+                android:textSize="15sp"
+                android:layout_marginBottom="14dp" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:progress="72"
+                android:progressTint="#FFD700"
+                android:backgroundTint="#33FFFFFF"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/textXP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ 70 XP Earned"
+                android:textColor="#FFD700"
+                android:fontFamily="@font/poppin"
+                android:textStyle="bold"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- Performance Breakdown -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_card"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🧠 Performance Breakdown"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/poppin"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="14dp" />
+
+            <!-- Logic & Reasoning -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Logic &amp; Reasoning"
+                    android:textColor="#B0C4DE"
+                    android:fontFamily="@font/inter"
+                    android:textSize="13sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressLogic"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="90dp"
+                    android:layout_height="6dp"
+                    android:backgroundTint="#33FFFFFF"
+                    android:progress="64"
+                    android:progressTint="#7C83FD"
+                    android:layout_marginEnd="10dp" />
+
+                <TextView
+                    android:id="@+id/textLogicValue"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="64"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/poppin"
+                    android:textStyle="bold"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <!-- Persuasiveness -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Persuasiveness"
+                    android:textColor="#B0C4DE"
+                    android:fontFamily="@font/inter"
+                    android:textSize="13sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressPersuasiveness"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="90dp"
+                    android:layout_height="6dp"
+                    android:backgroundTint="#33FFFFFF"
+                    android:progress="66"
+                    android:progressTint="#7C83FD"
+                    android:layout_marginEnd="10dp" />
+
+                <TextView
+                    android:id="@+id/textPersuasivenessValue"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="66"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/poppin"
+                    android:textStyle="bold"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <!-- Creativity -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Creativity"
+                    android:textColor="#B0C4DE"
+                    android:fontFamily="@font/inter"
+                    android:textSize="13sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressCreativity"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="90dp"
+                    android:layout_height="6dp"
+                    android:backgroundTint="#33FFFFFF"
+                    android:progress="72"
+                    android:progressTint="#7C83FD"
+                    android:layout_marginEnd="10dp" />
+
+                <TextView
+                    android:id="@+id/textCreativityValue"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="72"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/poppin"
+                    android:textStyle="bold"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- AI Feedback Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_card"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/rounded_glass_square"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:contentDescription="Hagit AI"
+                        android:src="@drawable/logo" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppin"
+                    android:text="Hagit.AI Feedback"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textAIFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:lineSpacingMultiplier="1.5"
+                android:text="You showed a good understanding of the topic and presented your points with some clarity. However, your arguments lacked strong supporting evidence, which weakened your overall case. Try incorporating real-world examples or data to back your claims. Your persuasiveness can improve significantly by acknowledging opposing views and countering them directly. Keep debating — you are on the right track!"
+                android:textColor="#B0C4DE"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- Level Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_card"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="🏆 Your Level"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/poppin"
+                    android:textStyle="bold"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_glass_square"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="6dp">
+
+                    <TextView
+                        android:id="@+id/textLevelBadge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Level 4 ⚔️"
+                        android:textColor="#FFD700"
+                        android:fontFamily="@font/poppin"
+                        android:textStyle="bold"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Level Progress Bar -->
+            <TextView
+                android:id="@+id/textNextLevelTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Progress to Level 5"
+                android:textColor="#B0C4DE"
+                android:fontFamily="@font/inter"
+                android:textSize="12sp"
+                android:layout_marginBottom="6dp" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:id="@+id/progressLevel"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:progress="72"
+                android:progressTint="#FFD700"
+                android:backgroundTint="#33FFFFFF"
+                android:layout_marginBottom="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textCurrentLevelXP"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="720 XP"
+                    android:textColor="#B0C4DE"
+                    android:fontFamily="@font/inter"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/textNextLevelXP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1000 XP"
+                    android:textColor="#B0C4DE"
+                    android:fontFamily="@font/inter"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <!-- Motivation Text: WIN scenario -->
+            <TextView
+                android:id="@+id/textMotivation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔥 Amazing! You're leveling up fast — keep this energy and you'll reach the top!"
+                android:textColor="#00E676"
+                android:fontFamily="@font/inter"
+                android:textSize="12sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginTop="12dp" />
+
+            <!-- Motivation Text: LOSE scenario (set this in code instead) -->
+            <!-- android:text="💪 Great effort! Every debate makes you sharper — come back stronger next time!" -->
+            <!-- android:textColor="#FF8A65" -->
+
+        </LinearLayout>
+        <!-- Bottom Buttons: Exit + Forfeit -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="12dp">
+
+            <LinearLayout
+                android:id="@+id/btnExit"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/rounded_card"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                android:focusable="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exit"
+                    android:textColor="#00E676"
+                    android:fontFamily="@font/poppin"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnDebateAgain"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/rounded_card"
+                android:clickable="true"
+                android:focusable="true">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⚡ Debate Again"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/poppin"
+                    android:textStyle="bold"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
